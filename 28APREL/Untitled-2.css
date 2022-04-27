@@ -1,0 +1,74 @@
+.col-4 {
+  width: 33.33%;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card1 img {
+  width: 60%;
+}
+.txt {
+  width: 270px;
+  height: 50px;
+}
+.txtNum1 {
+  width: 45px;
+  height: 45px;
+  border: 1px rgb(179, 19, 19) solid;
+  position: relative;
+}
+.txtNum2 {
+  color: red;
+}
+.txtNum1 ::after {
+  position: absolute;
+  content: "";
+  height: 65px;
+  margin: 0 auto;
+  left: 14px;
+  bottom: -9px;
+
+  width: 1%;
+  background: red;
+  transform: rotate(45deg);
+}
+.txtNum3 {
+  width: 140px;
+  height: 40px;
+  color: gray;
+}
+.Button {
+  width: 190px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10%;
+}
+.Button:hover {
+  background-color: red;
+  transition: all;
+}
+
+.allTxt {
+  width: 300px;
+  height: 300px;
+  margin: 225px 0 0 -370px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 560px) {
+  .col-4 {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .col-4 {
+    width: 50% !important;
+  }
+}

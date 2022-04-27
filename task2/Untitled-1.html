@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 160px;
+        height: 140px;
+        background-color: black;
+        position: relative;
+        animation-name: example;
+        animation-duration: 16s;
+        animation-delay: -4s;
+        border-radius: 45%;
+      }
+
+      @keyframes example {
+        0% {
+          background-color: gray;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: rgb(205, 40, 145);
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: rgb(24, 184, 77);
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: rgb(128, 111, 0);
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: aqua;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
